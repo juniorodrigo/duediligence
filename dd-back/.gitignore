@@ -1,0 +1,23 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Archivos de usuario y de configuración
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+
+# Archivos de paquetes
+packages/
+*.nupkg
+
+# Archivos de logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de configuración de secretos
+appsettings.Development.json

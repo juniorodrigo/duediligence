@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "df2fa552-5cfa-434c-9976-8d8c8ed0f18c",
+		"name": "due-diligence",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38443955"
+	},
+	"item": [
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "get-companies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5073/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5073",
+							"path": [
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-single-company",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5073/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5073",
+							"path": [
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save-company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"logo\": \"2\",\r\n  \"companyName\": \"xddddasda\",\r\n  \"tradeName\": \"dsasd\",\r\n  \"taxId\": \"fasda\",\r\n  \"phone\": \"asdasd\",\r\n  \"email\": \"xd@fafasdasd.com\",\r\n  \"website\": \"xfasd.com\",\r\n  \"address\": \"Test\",\r\n  \"country\": \"Peru\",\r\n  \"annualBilling\": 123\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5073/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5073",
+							"path": [
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-company",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5073/company",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5073",
+							"path": [
+								"company"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login-test",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"test@test.com\",\r\n  \"password\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5073/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5073",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create-user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Fabrizio Espinoza\",\r\n  \"email\": \"Fabrizio.Espinoza@pe.ey.com\",\r\n  \"passwordHash\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5073/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5073",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
